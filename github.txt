@@ -1,0 +1,25 @@
+*github.txt*	For Vim version 7.3.
+
+
+		  github plugin documentation
+
+
+github plugin		      		*github*
+1. Description		|github-description|
+2. Key bindings		|github-keybindings|
+
+==============================================================================
+1. Description 					*github-description*
+
+This is a simple command-set and key-mapping for opening github project in your browser, with desired commit-id
+
+==============================================================================
+2. Key bindings					*github-keybindings*
+
+All you need to do is to define projects list and key-maps in your vimrc.
+for example:
+
+let g:github_projects = {
+        \ '<F4>l' : 'torvalds/linux',
+        \ '<F4>y' : 'Valloric/YouCompleteMe',
+\ }

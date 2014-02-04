@@ -34,6 +34,9 @@ command -nargs=* GHCommit call GHCommits(<f-args>)
 command -nargs=1 GHCLinux call GHLinux(<f-args>)
 command -nargs=1 GHCProj call GHProj(<f-args>)
 
+if !exists('g:github_menu')
+     let g:github_menu = 0
+endif
 for [proj,maps] in items(g:github_projects)
    call GHMapInfo(maps['info'],proj)
    call GHMapCommit(maps['commit'],proj)

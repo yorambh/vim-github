@@ -4,8 +4,14 @@ All you need to do is to define projects list and key-maps in your vimrc.
 for example:
 
 let g:github_projects = {
-	\ 'torvalds/linux' : { 'info' : '<F4>L', 'commit' : '<F4>l'},
-	\ 'Valloric/YouCompleteMe' : {'info' : '<F4>Y', 'commit' : '<F4>y'},
+	\ 'torvalds/linux' : {
+		\ 'info' : '<F4>L',
+		\ 'commit' : '<F4>l'
+	\ },
+	\ 'Valloric/YouCompleteMe' : {
+		\ 'info' : '<F4>Y',
+		\ 'commit' : '<F4>y'
+	\ },
 \ }
 
 to enable menu items for your projects :

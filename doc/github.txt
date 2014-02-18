@@ -7,7 +7,7 @@
 github plugin		      		*github*
 1. Description		|github-description|
 2. Key bindings		|github-keybindings|
-3. Menu                 |github-menu\
+3. Menu			|github-menu|
 
 ==============================================================================
 1. Description 					*github-description*

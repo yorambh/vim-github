@@ -30,9 +30,9 @@ function! GHMapInfo(stroke,proj)
     endif
 endfunction
 
-command -nargs=* GHCommit call GHCommits(<f-args>)
-command -nargs=1 GHCLinux call GHLinux(<f-args>)
-command -nargs=1 GHCProj call GHProj(<f-args>)
+command! -nargs=* GHCommit call GHCommits(<f-args>)
+command! -nargs=1 GHCLinux call GHLinux(<f-args>)
+command! -nargs=1 GHCProj call GHProj(<f-args>)
 
 if !exists('g:github_menu')
      let g:github_menu = 0

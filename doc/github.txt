@@ -7,6 +7,7 @@
 github plugin		      		*github*
 1. Description		|github-description|
 2. Key bindings		|github-keybindings|
+3. Menu                 |github-menu\
 
 ==============================================================================
 1. Description 					*github-description*
@@ -23,3 +24,8 @@ let g:github_projects = {
 	\ 'torvalds/linux' : { 'info' : '<F4>L', 'commit' : '<F4>l'},
 	\ 'Valloric/YouCompleteMe' : {'info' : '<F4>Y', 'commit' : '<F4>y'},
 \ }
+
+==============================================================================
+3. Menu                                         *github-menu*
+
+let g:github_menu = 1

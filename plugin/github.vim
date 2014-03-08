@@ -1,6 +1,7 @@
 
 function! Browse(url)
-    exe 'silent !xdg-open '.a:url
+    exe 'silent !xdg-open '.a:url.' &'
+    redraw!
 endfunction
 
 function! GHCommits(proj,commit)

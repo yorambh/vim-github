@@ -37,6 +37,9 @@ command! -nargs=1 GHCProj call GHProj(<f-args>)
 if !exists('g:github_menu')
      let g:github_menu = 0
 endif
+if !exists('g:github_projects')
+     let g:github_projects = {}
+endif
 for [proj,maps] in items(g:github_projects)
    call GHMapInfo(maps['info'],proj)
    call GHMapCommit(maps['commit'],proj)

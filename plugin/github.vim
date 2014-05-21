@@ -1,6 +1,6 @@
 
 function! Browse(url)
-    exe 'silent !xdg-open '.a:url.' &'
+    exe 'silent !'.g:github_browser.' '.a:url.' &'
     redraw!
 endfunction
 
@@ -40,6 +40,9 @@ if !exists('g:github_menu')
 endif
 if !exists('g:github_projects')
      let g:github_projects = {}
+endif
+if !exists('g:github_browser')
+     let g:github_browser = 'xdg-open'
 endif
 for [proj,maps] in items(g:github_projects)
    call GHMapInfo(maps['info'],proj)

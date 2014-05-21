@@ -8,6 +8,7 @@ github plugin		      		*github*
 1. Description		|github-description|
 2. Key bindings		|github-keybindings|
 3. Menu			|github-menu|
+4. Brwoser		|github-browser|
 
 ==============================================================================
 1. Description 					*github-description*
@@ -29,3 +30,7 @@ let g:github_projects = {
 3. Menu                                         *github-menu*
 
 let g:github_menu = 1
+
+4. Browser                                      *github-browser*
+
+let g:github_brwoser = <custom browser>
